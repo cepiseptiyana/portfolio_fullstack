@@ -1,0 +1,6 @@
+@import url("./assets/index.css");
+@import "tailwindcss";
+
+@theme {
+  --my-text-shadow: 0 35px 35px rgb(255, 255, 255 / 0.9);
+}
