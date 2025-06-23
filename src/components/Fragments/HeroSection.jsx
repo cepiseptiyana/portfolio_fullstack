@@ -41,7 +41,7 @@ const HeroSection = (props) => {
       ref={heroRef}
       className="hero__section w-full h-screen relative z-1 overflow-hidden"
     >
-      <Canvas
+      {/* <Canvas
         style={{
           zIndex: "2",
           display: "flex",
@@ -60,7 +60,7 @@ const HeroSection = (props) => {
         />
         <OrbitControls />
         <AnimatedModel model="models/scene.gltf" />
-      </Canvas>
+      </Canvas> */}
 
       {/* blob */}
       <div className="wrapper__blob z-1">
@@ -104,6 +104,17 @@ const HeroSection = (props) => {
             teknologi modern seperti HTML, CSS, JavaScript, dan React.
           </p>
         </div>
+      </div>
+
+      {/* https://getwaves.io/ */}
+      <div className="absolute 2xl:w-[100%] md:w-[2800px] w-[2000px] bottom-0 z-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#273036"
+            fillOpacity="1"
+            d="M0,0L40,48C80,96,160,192,240,202.7C320,213,400,139,480,122.7C560,107,640,149,720,149.3C800,149,880,107,960,101.3C1040,96,1120,128,1200,170.7C1280,213,1360,267,1400,293.3L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </section>
   );

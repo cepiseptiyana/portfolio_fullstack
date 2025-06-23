@@ -13,6 +13,7 @@ const skills = [
   "tailwinds",
   "atomic design",
   "bootstrap",
+  "figma",
 ];
 
 const education = [
@@ -33,6 +34,7 @@ const project = [
     desc: "Sebuah platform belanja online modern yang dirancang untuk memberikan pengalaman pengguna yang cepat, aman, dan responsif. Fitur utama mencakup katalog produk dinamis, keranjang belanja, sistem pembayaran terintegrasi, manajemen pengguna, dan dashboard admin",
     tech: ["Vue.js", "Bootstrap"],
     visit: "visit website",
+    link: "https://cepiseptiyana.github.io/Pangcuy/",
   },
   {
     id: 2,
@@ -41,6 +43,7 @@ const project = [
     desc: "Platform pencarian dan eksplorasi film terkini. Temukan informasi lengkap, trailer, rating, dan ulasan dari berbagai genre film favoritmu.",
     tech: ["React.js", "Tailwinds"],
     visit: "visit website",
+    link: "https://cepiseptiyana.github.io/reactMv/",
   },
 ];
 

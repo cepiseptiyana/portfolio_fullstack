@@ -105,15 +105,17 @@ const Skill = () => {
     return (
       <li
         key={index}
-        className="font-[Lato,sans-serif] bg-orange-500 px-5 py-1 rounded-xl capitalize text-white cursor-pointer hover:shadow-2xl shadow-violet-200 hover:translate-y-[-3px] transition-all duration-300"
+        className="bg-orange-600 px-5 py-1 rounded-xl capitalize text-white cursor-pointer hover:shadow-2xl shadow-violet-200 hover:translate-y-[-3px] transition-all duration-300"
       >
-        {data}
+        <p className="font-[Lato,sans-serif] md:text-md sm:text-sm text-sm text-center text-white">
+          {data}
+        </p>
       </li>
     );
   });
 
   return (
-    <ul className="text-black md:text-md sm:text-sm text-xs flex justify-center items-center flex-wrap gap-5 pt-7 font-sans">
+    <ul className="flex justify-center items-center flex-wrap gap-5 pt-7">
       {skill}
     </ul>
   );
@@ -139,25 +141,25 @@ const Project = function () {
     return (
       <ul
         key={data.id}
-        className="relative md:w-[400px] w-[300px] bg-neutral-800 shadow-xl/40 shadow-neutral-500 rounded-xl p-4 md:pb-15 pb-12"
+        className="relative md:w-[400px] sm:w-[400px] w-[90%] bg-neutral-800 shadow-xl/40 shadow-neutral-500 rounded-xl p-4 md:pb-15 pb-12"
       >
         <li>
-          <img src={data.image} alt="" />
+          <img src={data.image} alt="" style={{ width: "100%" }} />
         </li>
         <li className="font-bold pt-2 font-[Lato,sans-serif] md:text-lg sm:text-sm text-start text-white">
           {data.judul}
         </li>
-        <li className="font-thin md:text-md sm:text-sm text-start text-white ">
+        <li className="font-thin md:text-md sm:text-sm text-sm text-start text-white ">
           <p>{data.desc}</p>
         </li>
 
         <li className="font-thin flex gap-5 pt-2 md:text-md sm:text-sm text-start text-white">
-          <p className="bg-red-950 p-1 rounded-xs">{data.tech[0]}</p>
-          <p className="bg-red-950 p-1 rounded-xs">{data.tech[1]}</p>
+          <p className="bg-violet-800 p-1 rounded-xs">{data.tech[0]}</p>
+          <p className="bg-green-500 p-1 rounded-xs">{data.tech[1]}</p>
         </li>
 
         <li className="absolute bottom-2 bg-red-500 pt-1 pl-5 pr-5 rounded-md hover:bg-red-800 transition duration-500">
-          <a href="" className="capitalize text-white">
+          <a href={data.link} className="capitalize text-white">
             {data.visit}
           </a>
         </li>

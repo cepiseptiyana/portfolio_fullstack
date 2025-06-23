@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  // tanpa custom dns di gihub pages
+  // jangan sertakan nama repo jika custom domain
   // base: "/portfolio/",
 
   // custom dns domain github pages
