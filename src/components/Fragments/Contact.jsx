@@ -26,24 +26,27 @@ const Contact = () => {
   return (
     <>
       <section className="section_contact bg-black pt-5 w-full h-screen flex justify-center items-center text-white">
-        <div className="wrapper_contact w-[80%] h-[100%] flex md:flex-row flex-col justify-center items-center gap-2">
-          <div className="wrapper_text w-[100%] h-[50%] bg-yellow-500 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center transition-all duration-300">
-            <h1 className="capitalize lg:text-4xl md:text-3xl sm:text-2xl text-xl">
+        <div className="wrapper_contact lg:w-[80%] md:w-[90%] w-[100%] h-[100%] flex md:flex-row flex-col justify-center items-center gap-2">
+          {/* column_1 */}
+          <div className="wrapper_text w-[80%] md:h-[70%] h-[50%] font-[Lato,sans-serif] lg:text-lg md:text-md sm:text-sm p-5 bg-stone-800 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col gap-2 justify-center items-center transition-all duration-300">
+            <h1 className="capitalize lg:text-4xl md:text-3xl text-4xl">
               Let's chat
             </h1>
-            <p className="text-white capitalize text-center md:text-md sm:text-sm text-xs font-sans">
+            <p className="text-white text-center">
               whether you have question, want to start a project or simply want
               to connect fell free to send me a message in the connect form
             </p>
           </div>
-          <div className="wrapper_input w-[100%] h-[50%] bg-green-500 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center gap-2 transition-all duration-300">
-            <h1 className="capitalize lg:text-4xl md:text-3xl sm:text-2xl text-xl">
-              contact
+
+          {/* column_2 */}
+          <div className="wrapper_input w-[80%] md:h-[70%] h-[50%] bg-blue-900 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center gap-2 transition-all duration-300">
+            <h1 className="capitalize lg:text-4xl md:text-3xl text-4xl">
+              contact me
             </h1>
 
-            <ul className="w-[60%] font-sans capitalize flex flex-col gap-2 md:text-md sm:text-sm text-xs">
+            <ul className="w-[90%] font-[Lato,sans-serif] capitalize flex flex-col gap-2 lg:text-lg md:text-md sm:text-sm">
               <li className="flex flex-col">
-                <label htmlFor="username">name</label>
+                <label htmlFor="username">name :</label>
                 <input
                   ref={username}
                   className="bg-white text-black rounded-xl p-1"
@@ -53,7 +56,7 @@ const Contact = () => {
                 />
               </li>
               <li className="flex flex-col">
-                <label htmlFor="email">email</label>
+                <label htmlFor="email">email :</label>
                 <input
                   ref={email}
                   className="bg-white text-black rounded-xl p-1"
@@ -63,7 +66,7 @@ const Contact = () => {
                 />
               </li>
               <li className="flex flex-col">
-                <label htmlFor="message">message</label>
+                <label htmlFor="message">message :</label>
                 <input
                   ref={message}
                   className="bg-white text-black rounded-xl p-1"
@@ -76,7 +79,7 @@ const Contact = () => {
 
             <button
               onClick={handleFormContact}
-              className="bg-blue-500 text-white px-2 py-1 rounded cursor-pointer hover:bg-blue-400 transition-all duration-300"
+              className="uppercase font-bold bg-blue-500 text-white px-2 py-1 rounded cursor-pointer hover:bg-blue-400 transition-all duration-300"
             >
               contact us
             </button>

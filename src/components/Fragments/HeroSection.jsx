@@ -59,7 +59,7 @@ const HeroSection = (props) => {
           intensity={10}
         />
         <OrbitControls />
-        <AnimatedModel model="/models/scene.gltf" />
+        <AnimatedModel model="models/scene.gltf" />
       </Canvas>
 
       {/* blob */}
@@ -105,21 +105,6 @@ const HeroSection = (props) => {
           </p>
         </div>
       </div>
-
-      {/* getwaves.io
-      <div className="w-[100vw] h-[100vh] absolute top-0 z-1">
-        <svg
-          className="absolute bottom-0 sm:w-full w-[200%]"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#273036"
-            fillOpacity="1"
-            d="M0,128L30,144C60,160,120,192,180,186.7C240,181,300,139,360,138.7C420,139,480,181,540,197.3C600,213,660,203,720,213.3C780,224,840,256,900,272C960,288,1020,288,1080,282.7C1140,277,1200,267,1260,256C1320,245,1380,235,1410,229.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-          ></path>
-        </svg>
-      </div> */}
     </section>
   );
 };

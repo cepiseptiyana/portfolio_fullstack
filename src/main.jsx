@@ -4,12 +4,12 @@ import "./index.css";
 import App from "./App.jsx";
 
 // router
-import { HashRouter } from "react-router";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")).render(
-  <HashRouter>
+  <BrowserRouter>
     <StrictMode>
       <App />
     </StrictMode>
-  </HashRouter>
+  </BrowserRouter>
 );
