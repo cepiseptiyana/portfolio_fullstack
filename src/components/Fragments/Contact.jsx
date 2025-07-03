@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
 
           {/* column_2 */}
-          <div className="wrapper_input pl-2 pr-2 w-[90%] h-[100%] bg-blue-900 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center gap-2 transition-all duration-300">
+          <div className="wrapper_input pl-2 pr-2 w-[90%] h-[70%] bg-blue-900 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center gap-2 transition-all duration-300">
             <h1 className="capitalize lg:text-4xl md:text-3xl text-4xl">
               contact me
             </h1>
