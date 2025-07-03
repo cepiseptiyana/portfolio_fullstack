@@ -28,7 +28,7 @@ const Contact = () => {
       <section className="section_contact bg-black pt-5 w-full h-screen flex justify-center items-center text-white">
         <div className="wrapper_contact lg:w-[80%] md:w-[90%] w-[100%] h-[100%] flex md:flex-row flex-col justify-center items-center gap-2">
           {/* column_1 */}
-          <div className="wrapper_text w-[80%] md:h-[70%] h-[50%] font-[Lato,sans-serif] lg:text-lg md:text-md sm:text-sm p-5 bg-stone-800 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col gap-2 justify-center items-center transition-all duration-300">
+          <div className="wrapper_text pl-2 pr-2 md:w-[50%] w-[90%] h-[100%] font-[Lato,sans-serif] lg:text-lg md:text-md sm:text-sm bg-stone-800 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col gap-2 justify-center items-center transition-all duration-300">
             <h1 className="capitalize lg:text-4xl md:text-3xl text-4xl">
               Let's chat
             </h1>
@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
 
           {/* column_2 */}
-          <div className="wrapper_input w-[80%] md:h-[70%] h-[50%] bg-blue-900 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center gap-2 transition-all duration-300">
+          <div className="wrapper_input pl-2 pr-2 w-[90%] h-[100%] bg-blue-900 hover:shadow-2xl hover:shadow-white hover:translate-y-[-5px] hover:rounded-xl flex flex-col justify-center items-center gap-2 transition-all duration-300">
             <h1 className="capitalize lg:text-4xl md:text-3xl text-4xl">
               contact me
             </h1>
