@@ -1,19 +1,18 @@
-nama: Demo GitHub Actions 
-nama-jalan: ${{ github.actor }} sedang menguji GitHub Actions 🚀 
-pada: [push] 
-pekerjaan: 
-  Explore-GitHub-Actions: 
-    runs-on: ubuntu-latest 
-    langkah-langkah: 
-      - jalankan: echo "🎉 Pekerjaan dipicu secara otomatis oleh peristiwa ${{ github.event_name }}." 
-      - jalankan: echo "🐧 Pekerjaan ini sekarang berjalan pada server ${{ runner.os }} yang dihosting oleh GitHub!" 
-      - jalankan: echo "🔎 Nama cabang Anda adalah ${{ github.ref }} dan repositori Anda adalah ${{ github.repository }}." 
-      - nama: Kode repositori Check out 
-        menggunakan: actions/checkout@v4 
-      - jalankan: echo "💡 Repositori ${{ github.repository }} telah dikloning ke runner." 
-      - jalankan: echo "🖥️ Alur kerja sekarang siap untuk menguji kode Anda pada runner." 
-      - nama: Daftar file dalam repositori 
-        jalankan: | 
-          ls ${{ github.workspace }} 
-      - jalankan: echo "🍏 Status pekerjaan ini adalah ${{ job.status }}."
-
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
