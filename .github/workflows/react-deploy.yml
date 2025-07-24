@@ -1,26 +1,26 @@
 name: React.js Deploy
 
-on: 
-  push: 
+on:
+  push:
     branches:
       - main
-    paths: 
-      - 'package.json'
-      - 'src/**'
+    paths:
+      - "package.json"
+      - "src/**"
 
 jobs:
   deploy:
     name: Deploy to Production
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: setup node
         uses: actions/setup-node@v3
-        with: 
-          node-version: 22
+        with:
+          node-version: 20
 
       - name: install depedencies
         run: npm install
@@ -30,5 +30,3 @@ jobs:
 
       - name: Deploy to Vercel
         run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
-    
-      

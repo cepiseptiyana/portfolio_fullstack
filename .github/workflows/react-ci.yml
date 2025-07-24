@@ -1,31 +1,24 @@
 name: React.js CI
 
-on: 
-  push: 
-    branches: 
-      - main
-      - develop
-    paths:
-      - 'package.json'
-      - 'scr/**'
+on:
   pull_request:
     branches:
       - main
       - develop
-      
+
 jobs:
   build:
     name: Build React App
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with: 
-            node-version: 22.17.0
+        with:
+          node-version: 20
 
       - name: Install Depedencies
         run: npm install
@@ -40,9 +33,7 @@ jobs:
         run: npm run build
 
       - run: echo "🎉 semangat !"
-        
-            
-      
+
       # - run: echo "🎉 uye The job was automatically triggered by a ${{ github.event_name }} event."
       # - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       # - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
