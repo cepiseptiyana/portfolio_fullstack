@@ -25,6 +25,7 @@ jobs:
 
       # - name: Run lint
       #   run: npm run lint
+      #  don't lint
 
       # - name: Run test
       #   run: npm test
