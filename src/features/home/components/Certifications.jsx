@@ -5,18 +5,18 @@ const List_certifications = (props) => {
     const list = certifications.map((data, index) => {
       return (
         <tr key={index}>
-          <td>
+          <td className="flex items-start pt-2 pr-2">
             <h1>{data.judul}</h1>
           </td>
 
-          <td>
+          <td className="pt-2 pr-2">
             <p>{data.text}</p>
           </td>
 
           <td>
             <nav className="mt-5">
               <a
-                className={`capitalize w-[90px] text-center inline-block ${data.color} p-2 text-white text-sm rounded-md hover:bg-blue-500 duration-200`}
+                className={`capitalize w-[100%] sm:text-sm text-xs text-center inline-block ${data.color} p-1 text-white rounded-md hover:bg-blue-500 duration-200`}
                 href={data.file}
               >
                 {data.name}
@@ -49,7 +49,7 @@ const Certifications = (props) => {
           </h1>
         </header>
 
-        <ul className="text-white pt-5">
+        <ul className="text-white pt-5 sm:text-sm text-xs">
           <table>
             <thead>
               <tr className="text-left">
