@@ -12,17 +12,22 @@ import icon_figma from "../../../assets/tech/figma.png";
 import icon_next from "../../../assets/tech/nextjs.svg";
 import icon_redux from "../../../assets/tech/redux.svg";
 import icon_reactRouter from "../../../assets/tech/react-router.svg";
+import icon_expressJs from "../../../assets/tech/express-js.svg";
+import icon_golang from "../../../assets/tech/golang.png";
+import mysql from "../../../assets/tech/mysql.png";
 
 const technology = [
-  { name: "html", image: icon_Html },
-  { name: "css", image: icon_css },
-  { name: "javascript", image: icon_js },
-  { name: "react", image: icon_react },
   { name: "node.js", image: icon_node },
-  { name: "next.js", image: icon_next },
+  { name: "express.js", image: icon_expressJs },
+  { name: "golang", image: icon_golang },
+  { name: "mysql", image: mysql },
 ];
 
 const tools = [
+  { name: "css", image: icon_css },
+  { name: "html", image: icon_Html },
+  { name: "javascript", image: icon_js },
+  { name: "react", image: icon_react },
   { name: "tailwind", image: icon_tailwind },
   { name: "bootstrap", image: icon_bootstrap },
   { name: "reactTestingLibrary", image: icon_rtl },
@@ -31,6 +36,7 @@ const tools = [
   { name: "figma", image: icon_figma },
   { name: "redux", image: icon_redux },
   { name: "react-router", image: icon_reactRouter },
+  { name: "next.js", image: icon_next },
 ];
 
 export { technology, tools };

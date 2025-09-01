@@ -15,7 +15,7 @@ const Education = () => {
             Universitas Terbuka
           </p>
           <p className="font-[Lato,sans-serif] text-gray-300 md:text-lg text-sm">
-            Program Studi Sistem Informasi - Semester 7
+            Program Studi Sistem Informasi - Semester 11
           </p>
           <p className="font-[Lato,sans-serif] text-gray-300 md:text-lg text-sm">
             2021 - Sekarang

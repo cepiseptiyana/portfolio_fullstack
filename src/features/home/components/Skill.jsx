@@ -72,10 +72,10 @@ const Skill = (props) => {
           <ul>{list_skill_teknis}</ul>
         </article>
 
-        <article>
+        <article className="bg-pink-400 shadow-lg shadow-cyan-500">
           <header>
             <h1 className="text-white capitalize font-sans font-bold lg:text-2xl sm:text-2xl text-md text-center p-5">
-              Tools
+              Front End Stack
             </h1>
           </header>
 
@@ -84,10 +84,10 @@ const Skill = (props) => {
           </ul>
         </article>
 
-        <article className="">
+        <article className="bg-cyan-300 shadow-lg shadow-cyan-500">
           <header>
             <h1 className="text-white capitalize font-sans font-bold lg:text-2xl sm:text-2xl text-md text-center p-5">
-              technology stack
+              Back End Stack
             </h1>
           </header>
 

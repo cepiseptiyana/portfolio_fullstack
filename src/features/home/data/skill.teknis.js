@@ -1,4 +1,5 @@
 const skill_Teknis = [
+  "🛠️ REST API Development: Merancang dan membangun RESTful API yang scalable dan maintainable menggunakan Node.js dan Express, dengan praktik terbaik dalam routing, autentikasi, validasi data, dan pengelolaan error, agar mudah diintegrasikan dengan frontend.",
   "🔬 Atomic Design: Menerapkan prinsip desain komponen UI modular dan reusable berdasarkan struktur atom, molekul, organisme, template, dan halaman",
   "📁 Feature-Based Folder Structure: Mengorganisir kode berdasarkan fitur/domain alih-alih tipe file, untuk meningkatkan skalabilitas, keterbacaan, dan kolaborasi tim pada proyek berskala besar.",
   "🚀 CI/CD (Continuous Integration & Deployment): Mengotomatisasi proses build, test, dan deployment menggunakan GitHub Actions",

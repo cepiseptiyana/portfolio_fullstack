@@ -63,13 +63,14 @@ const Jumbotron = () => {
           ref={elementFront}
           className="capitalize animated-text sm:pt-7 pt-0 sm:2xl text-2xl font-bold"
         >
-          front end web
+          Fullstack Developer
         </h1>
 
         <p className="font-[Lato,sans-serif] text-gray-300 md:text-lg text-sm">
-          Hallo, saya cepi septiyana Front-End Web Developer Saya membangun
-          antarmuka web yang cepat, responsif, dan user-friendly menggunakan
-          teknologi modern seperti HTML, CSS, JavaScript, dan React.
+          Hi! I'm Cepi, a passionate Fullstack Developer with a strong
+          foundation in both frontend and backend technologies. I enjoy building
+          web applications that are not only functional but also user-friendly
+          and scalable.
         </p>
 
         <a
