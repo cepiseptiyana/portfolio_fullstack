@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 // assets
-import file_cv from "../../../assets/fileCv/cepi.s.cv.pdf";
+import file_cv from "../../../assets/fileCv/fullstack-intern-cepi.pdf";
 
 // gsap
 import { gsap } from "gsap";
